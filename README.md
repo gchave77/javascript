@@ -8,12 +8,13 @@ This repo contains all work pertaining to the Javascript Module of TEKcamp.
 * Day 3 - Complete the problems in exercises2.js
 * Day 4 - Complete the problems in exercises3.js
 
-All problems can be found in javascript files.
+All problems can be found in the javascript files.
 
 
 ## ********************************
 ## Git Instructions
-- [ ] Fork this repository
+- [ ] Create a template copy of this repository by clicking : "Use this template"
+- [ ] Name the repository the same name as the master template repository.  
 - [ ] Add your TA as collaborator
 - [ ] Clone YOUR repo to your local computer
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
