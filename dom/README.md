@@ -3,7 +3,7 @@ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/M
 
 **Follow the below steps to complete this exercise:**
 
-1. move the css from outside the html file into a separate css stylesheet called : shopping-list.css
+1. move the css from outside the shopping-list.html file into a separate css stylesheet called : shopping-list.css
 2. Create three variables that hold references to the following elements &lt;ul&gt; &lt;input&gt; &lt;button&gt; elements.
 3. Create a function that will run in response to the button being clicked.
 4. Inside the function body, start off by storing the current value of the input element in a variable.
