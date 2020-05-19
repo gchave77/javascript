@@ -15,7 +15,7 @@ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/M
 10. Attach an event handler to the delete button, so that when clicked it will delete the entire list item it is inside.
 11. Finally, use the focus() method to focus the input element ready for entering the next shopping list item.
 
-**Bonus Goal**
+**<h4>Bonus Assignment</h4>**
 
 Create a timer using DOM manipulation techniques. The following files are ready to go with some boilerplate code.
 <pre>timer.html timer.js, and timer.css</pre> 
