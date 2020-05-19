@@ -16,6 +16,7 @@ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/M
 11. Finally, use the focus() method to focus the input element ready for entering the next shopping list item.
 
 **Bonus Goal**
+
 Create a timer using DOM manipulation techniques. The following files are ready to go with some boilerplate code.
 <pre>timer.html timer.js, and timer.css</pre> 
 
