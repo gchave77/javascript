@@ -6,9 +6,9 @@ This repo contains all work pertaining to the Javascript Module of TEKcamp.
 * Day 1 - Complete the problems in exercises1.js
 * Day 2 - Complete the problems in exercises2.js
 * Day 3 - Complete the problems in exercises3.js
-* Day 4 - Complete the problems in dom folder.  Instructions for that exercise can be found in dom/README.md
+* Day 4 - Complete the problems in dom folder.  Instructions for this exercise can be found in dom/README.md.  **There is a bonus assignment in the dom folder.  asdFJ
 
-All problems descriptions can be found in the javascript files.  The DOM problem description can be found in the dom/README.md file
+All problems can be found in the javascript files.  The DOM problem can be found in the dom/README.md file
 
 
 ## ********************************
