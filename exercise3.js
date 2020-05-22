@@ -115,6 +115,29 @@
 
 
 
+/************************************************************* */
+//Problem 10:
+//Create a map object of all the data types in javascript we have learned.  the key will be a the name of the data type, and the value will be an array of two values : 
+// 1. value or reference, depending on if the data type is accessed by value or by reference
+// 2. an example of the data type.
 
 
 /************************************************************* */
+//Problem 11:
+
+let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
+//reverse the array, without modifying the order of the ones array.
+
+
+/************************************************************* */
+//Problem 12:
+//create a function called performer(cb) that takes in a callback function and runs that callback function.  It should return the output of the callback function.
+
+function performer(cb) {
+    //code goes here
+}
+
+
+/************************************************************* */
+//Bonus assignment:
+//research a new feature of ES6+ and create an example of it's use case here.  Be sure to write comments explaining what the feature is and why it is useful.
