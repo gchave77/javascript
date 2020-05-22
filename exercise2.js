@@ -1,36 +1,43 @@
 //Complete the following 6 coding problems below: 
 
 /************************************************************* */
-// Problem 1:
-// Create a function constructor for a Dog object with parameters breed, color, and age. Then create a function with the prototype property that outputs the age in human years (multiple by 7). Once finished, instantiate two new objects by passing in arguments and access the function for human years.
+// Problem 1: Refactor the for() loop to be a while loop.
+//
 
+for(let i=0; i<10; i++) {
+    console.log(" the value of i in the loop is : " + i);
+}
 
 
 //your code...
-
-
 
 
 
 
 /************************************************************* */
 // Problem 2:
-// Recreate your Dog object using the Object.create method by first defining your prototype object and then instantiating your first object based on that prototype.
+// multiply the sum of 30 added to two by 20.  Divide the product by 10 raised to the power of 2
+//use javascript to compute the value of the above statement. Each individual operation needs to be a function expression. run all the functions after defining them, and print the answer to the console.
 
 //your code...
-
-
-
-
 
 
 /************************************************************* */
-// Problem 3:
-// Write a function called multiple that has one parameter (x). Inside that function, create another function called fn with one parameter (y) that returns the product of both parameters (x,y). The multiple function should return its inner function. Now create a variable called triple. Use triple to console log some multiples of three.
-
-//your code...
-
-
+//Problem 3:
+//Determine whether the following values are "truthy" or "falsy".  console.log() the value, along with your reason why using String interpolation.
+// values : 
+// 20
+// 0
+// "zero";
+// const zero = 20;
+// null
+// "0"
+// !!""
+// {}
+// () => {console.log("hello TEKcamp!");
+// 125
+// undefined
+// ""
 
 
 
@@ -43,26 +50,33 @@
 
 
 
+/************************************************************* */
+// Problem 5: Refactor the following functions to use a ternary expression:
+const age = 10;
+if (age > 21) console.log("adult"); else {
+    console.log("minor");
+}
+
+if (age > 13 && age < 19) console.log('teen'); else {
+    console.log("not a teenager");
+};
+
+if (age > 65) console.log("retired"); else {
+    console.log("still working...");
+}
 
 
 
 /************************************************************* */
-// Problem 5:
-// Start by writing an outer function called stockGain that has cost basis (basis) as a parameter; declare a variable called message that holds " is how much the stock has increased".  Return an inner function with years (yrs) as a parameter and declare a variable for growth rate (r) of 5%. Console log your calculation.
+//Bonus assignments:
 
-// Once finished, declare a variable called futureValue that holds your stockGain function and enter any amount for the cost basis and a number for the number of years.  Run the function returned by the higher order function to display the future value of the stock.  
+//1. Create a Higher Order Function called multiple(x) that takes a single parameter.  This HOF should return another function fn(y) that takes another single parameter y.  This inner function should compute the product of it's parameter with the parameter passed into multiple.  Use this returned "first-class" function to compute triples of any given number.
 
 //your code...
 
 
+// 2. Write an outer function called stockGain that has cost basis (basis) as a parameter; declare a variable called message that holds " is how much the stock has increased".  Return an inner function with years (yrs) as a parameter and declare a variable for growth rate (r) of 5%. Console log your calculation.
 
-
-
-
-/************************************************************* */
-// Problem 6:
-// Create a function constructor for a Student object with the parameters firstName and lastName. Then write a function that concatenates firstName and lastName and returns the full name. Once finished, declare a variable called studentName that holds a function with two parameters: grade and major. Console log the full name with the grade and major. 
-
-// Next declare another variable recordStudent that holds studentName with the bind() method. Use the call() and apply() methods as well. 
+// Once finished, declare a variable called futureValue that holds your stockGain function and enter any amount for the cost basis and a number for the number of years.  Run the function returned by the higher order function to display the future value of the stock.  
 
 //your code...
