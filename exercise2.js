@@ -24,7 +24,7 @@ for(let i=0; i<10; i++) {
 
 /************************************************************* */
 //Problem 3:
-//Determine whether the following values are "truthy" or "falsy".  console.log() the value, along with your reason why using String interpolation.
+//Determine whether the following values are "truthy" or "falsy".  console.log() the value, whether the value is 'truthy' or 'falsy', along with your reasoning why using String interpolation.
 // values : 
 // 20
 // 0
@@ -32,7 +32,7 @@ for(let i=0; i<10; i++) {
 // const zero = 20;
 // null
 // "0"
-// !!""
+// !""
 // {}
 // () => {console.log("hello TEKcamp!");
 // 125
@@ -64,6 +64,32 @@ if (age > 13 && age < 19) console.log('teen'); else {
 if (age > 65) console.log("retired"); else {
     console.log("still working...");
 }
+
+
+/************************************************************* */
+// Problem 6: Create an object literal that represents yourself.  set it to a variable that appropriately describes the object.  Include the following properties:
+
+//name,age,gender,hobbies,profession,education
+
+//add a method on your object, named learn. the learn method should print the value of the name property using the 'this' keyword.
+
+//add another method on your object of any action you want to perform, using some property that exists on your object, making sure to utilize the 'this' keyword.
+
+//your code...
+
+
+
+/************************************************************* */
+// Problem 6: Create an object literal that represents any object in the real world that you like.  Try to come up with a realistic set of properties and methods that would accurately describe that object.  In at least one of your methods, use the this keyword to refer back to one of the properties you defined on this object literal.  
+
+//your code...
+
+
+
+/************************************************************* */
+//Problem 7: create a function that outputs your 3 favorite data types, with a message explaining why you like that data type.
+
+//your code...
 
 
 

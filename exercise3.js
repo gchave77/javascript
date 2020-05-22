@@ -25,8 +25,6 @@
 
 
 
-
-
 /************************************************************* */
 // Problem 3:
 // Write a JavaScript program that declares an array of numbers from one to five and returns another array with the squared value of each number from the first array. Use an arrow function and one of the built-in array methods. 
