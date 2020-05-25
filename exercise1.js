@@ -1,4 +1,4 @@
-//Complete the following 7 coding problems below: 
+//Complete the following problems: 
 
 // Problem 1:
 // Part 1: Write a JavaScript function that converts the current temperature from Fahrenheit to Celsius. Declare a variable for the current temperature then store the Celsius temperature into a variable. Console log the variable.
@@ -69,7 +69,7 @@
 
 /************************************************************* */
 // Problem 7:
-// Write a JavaScript function that iterates the integers from 1 to 100. For multiples of 3 print "Fizz" instead of the number and for multiples of 5, print "Buzz." For numbers that are multiples of both 3 and 5, print "FizzBuzz."
+// Write a JavaScript function that iterates the integers from 1 to 100. For multiples of 3 print "TEK" instead of the number and for multiples of 5, print "camp." For numbers that are multiples of both 3 and 5, print "TEKcamp."
 
 //your code...
 

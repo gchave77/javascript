@@ -1,4 +1,4 @@
-//Complete the following 9 coding problems below: 
+//Complete the following problems: 
 
 /************************************************************* */
 
@@ -27,7 +27,7 @@
 
 /************************************************************* */
 // Problem 3:
-// Write a JavaScript program that declares an array of numbers from one to five and returns another array with the squared value of each number from the first array. Use an arrow function and one of the built-in array methods. 
+// Write a function that declares an array of numbers from one to five and returns another array with the squared value of each number from the first array. Use an arrow function and one of the built-in array methods. 
 
 
 
@@ -68,7 +68,7 @@
 // Problem 6:
 // DNA is made up of base pairs where every G is paired with a C and every T is paired with an A. 
 
-// Write a JavaScript function that takes in a DNA string as a parameter and returns an array with the complementary strand. For example, a string of "GCTA" would return an array of ["C", "G", "A", "T"].  
+// Write a function that takes in a DNA string as a parameter and returns an array with the complementary strand. For example, a string of "GCTA" would return an array of ["C", "G", "A", "T"].  
 
 
 
@@ -81,52 +81,44 @@
 
 /************************************************************* */
 // Problem 7:
-// Declare an array of numbers with at least 3 numbers. Use the Math.max() method and the spread operator to output the largest value from the array. 
 
+// 7.a - Write a function to find the maximum numerical value of the given array.  Get rid of any non numerical values.  Convert the strings that are numbers to an actual number data type.  ("one" => 1) ("1" => 1).  Use array methods to perform this task.  
+const numbers = [2,23,1,2,1,1,1,2,2.5,20,200,2000,,{k:1},20000,19999,1878,140,23,4,"sk",true,true,"true-dat","nice","one","two","three","3","tea",[]];
 
+function maxNumber(numbers) {
+    //your code...
+}
 
-//your code...
+// 7.b -Write a function that sorts the given numbers array.  Allow the function to sort the array in descending order
 
-
+function sortNums(numbers,desc=false) {
+    //your code...
+};
 
 
 
 
 /************************************************************* */
 // Problem 8:
-// Write a JavaScript function that sorts a list of values and uses rest parameters. Use the sort() method to sort the values.  
+//add an example of at least 5 JavaScript data types to the given mapObj.  The key is the example data type, and the value is the name of the data type.  An object data type has already been set as the 1st key / val pair.
+
+const mapObj = new Map();
+mapObj.set({company : "TEKsystems"},"object");
 
 
-
-//your code...
-
-
-
-
-
-
-/************************************************************* */
-// Problem 9:
-// Declare a map object and set three values. Delete the third key, then use a for..of loop to iterate through the map and log the keys and their values.  
-
+console.log(mapObj.has({company : "TEKsystems"}));  
+//The above console.log() statmeent returns false.  Write another console.log() statement explaining why this line of code prints false.  Refactor the code on line 106, so you can successfully check to see if {company : "TEKsystems"} exists in the mapObj.
 
 //your code...
 
-
-
-
-/************************************************************* */
-//Problem 10:
-//Create a map object of all the data types in javascript we have learned.  the key will be a the name of the data type, and the value will be an array of two values : 
-// 1. value or reference, depending on if the data type is accessed by value or by reference
-// 2. an example of the data type.
+//loop through the mapObj and create a new array of only the data types, leaving out the example keys of the mapObj.  Use array methods to do this.  Example output : ['string',number','boolean',array','object']
 
 
 /************************************************************* */
 //Problem 11:
 
 let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
-//reverse the array, without modifying the order of the ones array.
+//reverse the array, without modifying the ones array.
 
 
 /************************************************************* */

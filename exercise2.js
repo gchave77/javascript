@@ -1,4 +1,4 @@
-//Complete the following 6 coding problems below: 
+//Complete the following problems:
 
 /************************************************************* */
 // Problem 1: Refactor the for() loop to be a while loop.
@@ -44,9 +44,23 @@ for(let i=0; i<10; i++) {
 
 /************************************************************* */
 // Problem 4:
-// Write a function that adds two decimals and returns the value rounded to the nearest integer. Once finished, refactor your function into an immediately invoked function expression (IIFE). Remember to enclose your function in parentheses and include some additional parentheses at the end.
+// Refactor the following code using a switch statement:
 
-//your code...
+const day = "friday";
+
+if(day === "monday") {
+    console.log("we got a long week ahead of us...");
+} else if(day === "tuesday") {
+    console.log("tuesday's are still beterr than mondays, but LONG way to go still");
+} else if (day === "wednesday") {
+    console.log("We are smack dab in the middle of the week");
+} else if (day === "thursday") {
+    console.log("Thursday night... the mood is right");
+} else if (day === "friday") {
+    console.log("TGIF.  Friday truly is the best day of the week!")
+} else {
+    console.log("It's a weekend!")
+}
 
 
 
@@ -68,15 +82,20 @@ if (age > 65) console.log("retired"); else {
 
 /************************************************************* */
 // Problem 6: Create an object literal that represents yourself.  set it to a variable that appropriately describes the object.  Include the following properties:
+/*
+-name
+-age
+-gender
+-hobbies
+-profession
+-education
 
-//name,age,gender,hobbies,profession,education
+-add a method on your object, named learn. the learn method should print the value of the name property using the 'this' keyword.
 
-//add a method on your object, named learn. the learn method should print the value of the name property using the 'this' keyword.
-
-//add another method on your object of any action you want to perform, using some property that exists on your object, making sure to utilize the 'this' keyword.
+-add another method on your object of any action you want to perform, using some property that exists on your object, making sure to utilize the 'this' keyword.
+*/
 
 //your code...
-
 
 
 /************************************************************* */
@@ -106,3 +125,5 @@ if (age > 65) console.log("retired"); else {
 // Once finished, declare a variable called futureValue that holds your stockGain function and enter any amount for the cost basis and a number for the number of years.  Run the function returned by the higher order function to display the future value of the stock.  
 
 //your code...
+
+
