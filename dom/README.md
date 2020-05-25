@@ -24,10 +24,6 @@ Here is a codepen link to the simple html document we marked up during our HTML 
 using the <code>inject.js</code> file, write some vanilla javascript to inject the entire contents of the html into the &lt;div id="inject"&gt; &lt;div&gt; html element.  You will have to link together the <code>inject.html</code> with the <code>inject.js</code> in order to get this to work.  You will need to reserach Javascript DOM manipulation in order to complete this exercise.  You are <strong>NOT</strong> allowed to copy & paste in any html directly in the inject.html document.
 
 
-
-
-
-
 **<h4>Bonus Assignment</h4>**
 
 Create a timer using DOM manipulation techniques. The following files are ready to go with some boilerplate code.
