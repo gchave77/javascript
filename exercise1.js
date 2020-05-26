@@ -48,7 +48,7 @@
 
 /************************************************************* */
 // Problem 5:
-// Write a JavaScript function creates a car object using information about your car. Include the make, model, year, and color. Write a function to get the year, color, make, and model in that order.
+// Write a JavaScript function that creates a car object using information about your car. Include the make, model, year, and color. Write a function to get the year, color, make, and model in that order.
 
 //your code...
 
@@ -90,7 +90,7 @@ const foodArray = [ 'potatoes', 'tamales', 'lemon','strawberries','chocolate', '
 //access the value of the last element of the array and set it to a variable called school.  print the school variable to the console.
 
 const adjectiveArray = [ 'salty', 'spicy', 'sour', 'sweet', 'rich','creamy','amazing'];
-// Using both nameArray and adjectiveArray, make a
+// Using both the foodArray and the adjectiveArray, make a
 // "for" loop that console.log()'s a sentence for each
 // corresponding value in the arrays. Add the word "is" or "are" depending on if the food is singular or plural.  "Potatoes are salty", "Lemon is sour".
 
