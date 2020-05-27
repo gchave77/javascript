@@ -3,69 +3,90 @@
 // Problem 1:
 // Part 1: Write a JavaScript function that converts the current temperature from Fahrenheit to Celsius. Declare a variable for the current temperature then store the Celsius temperature into a variable. Console log the variable.
 
+function convertFtemp(fTemp) {
+    var cTemp = (fTemp - 32) * 5 / 9;
+    console.log(cTemp);
+}
+convertFtemp(100);
+
 // Part 2: Write another funciton that converts the Celsius temperature back to Fahrenheit. 
 
-//your code...
-
-
-
-
-
+function convertCtemp(cTemp) {
+    var fTemp = (cTemp * 9/5) + 32;
+    console.log(fTemp);
+}
+convertCtemp(22);
 
 /************************************************************* */
 // Problem 2:
 // Write a JavaScript function to determine if someone is old enough to vote. Declare a variable for age and write a conditional statement for whether that age is old enough to vote. Console log "yes" or "no"
 
-//your code...
-
-
-
-
-
-
+function votingAge(age) {
+    if (age >= 18) {
+        console.log("Yes");
+    } else {
+        console.log("No");
+    }
+}
+votingAge(17);
 
 /************************************************************* */
 // Problem 3:
 // Write a JavaScript function that converts a string to an array. Declare a string variable with "The five boxing wizards jump quickly." Use the split() method to turn the string into an array of strings. (Be sure you separate the string into words, not characters.) After you have finished, use the join() method to change the array back into a string.
 
-//your code...
-
-
-
-
-
-
+function convertString() {
+    var aString = "The five boxing wizards jump quickly.";
+    console.log(aString);
+    var anArray = aString.split(" ");
+    console.log(anArray);
+    var joinString = anArray.join(" ");
+    console.log(joinString);
+}
+convertString();
 
 /************************************************************* */
 // Problem 4:
 // Write a JavaScript function with a function that reverses your telephone number. Use the split() and join() methods from the previous problem as well as the toString() method to convert a number into a string and reverse() method to reverse an array in place.
 
-//your code...
-
-
-
+function revPhone(phone) {
+    console.log(phone);
+    var phoneString = phone.toString();
+    var phoneArray = phoneString.split("");
+    console.log(phoneArray);
+    var joinString = phoneArray.join("");
+    console.log(joinString);
+    var phoneReverseArray = phoneArray.reverse();
+    console.log(phoneReverseArray);
+    var phoneReverse = phoneReverseArray.join("");
+    console.log(phoneReverse);
+}
+revPhone(6198868621);
 
 
 /************************************************************* */
 // Problem 5:
 // Write a JavaScript function that creates a car object using information about your car. Include the make, model, year, and color. Write a function to get the year, color, make, and model in that order.
 
-//your code...
-
-
-
-
-
+// function carObject(year, color, make, model) {
+//     console.log(car);
+// }
+// var car = carObject(2017, "blue", "Toyota", "Camry");
 
 /************************************************************* */
 // Problem 6:
 // Write a JavaScript function with a loop that will iterate from 0 to 15. Each iteration, the for loop will check if the current number is odd or even and display the output.
 
-
-//your code...
-
-
-
+function myLoop() {
+    var i;
+    for (i = 0; i < 16; i++) {
+        if (i % 2 == 0) {
+            console.log(i + " is even");
+        } else {
+            console.log(i + " is odd");
+        }
+    }
+}
+myLoop();
 
 /************************************************************* */
 // Problem 7:
