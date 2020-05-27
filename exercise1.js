@@ -72,10 +72,12 @@ console.log("");
 // Problem 5:
 // Write a JavaScript function that creates a car object using information about your car. Include the make, model, year, and color. Write a function to get the year, color, make, and model in that order.
 
-// function carObject(year, color, make, model) {
-//     console.log(car);
-// }
-// var car = carObject(2017, "blue", "Toyota", "Camry");
+function carObject() {
+    var car = {year: 2017, color: "blue", make: "Toyota", model: "Camry"};
+    console.log(car);
+}
+carObject();
+console.log("");
 
 /************************************************************* */
 // Problem 6:
@@ -131,6 +133,10 @@ console.log("");
 // Problem 9:
 const foodArray = [ 'potatoes', 'tamales', 'lemon','strawberries','chocolate', 'pudding', {school : 'TEKcamp'} ];
 //access the value of the last element of the array and set it to a variable called school.  print the school variable to the console.
+
+var school = (foodArray[foodArray.length - 1]);
+console.log(school);
+console.log("");
 
 const adjectiveArray = [ 'salty', 'spicy', 'sour', 'sweet', 'rich','creamy','amazing'];
 // Using both the foodArray and the adjectiveArray, make a
