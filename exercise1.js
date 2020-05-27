@@ -8,6 +8,7 @@ function convertFtemp(fTemp) {
     console.log(cTemp);
 }
 convertFtemp(100);
+console.log("");
 
 // Part 2: Write another funciton that converts the Celsius temperature back to Fahrenheit. 
 
@@ -16,6 +17,7 @@ function convertCtemp(cTemp) {
     console.log(fTemp);
 }
 convertCtemp(22);
+console.log("");
 
 /************************************************************* */
 // Problem 2:
@@ -29,6 +31,7 @@ function votingAge(age) {
     }
 }
 votingAge(17);
+console.log("");
 
 /************************************************************* */
 // Problem 3:
@@ -43,6 +46,7 @@ function convertString() {
     console.log(joinString);
 }
 convertString();
+console.log("");
 
 /************************************************************* */
 // Problem 4:
@@ -61,6 +65,7 @@ function revPhone(phone) {
     console.log(phoneReverse);
 }
 revPhone(6198868621);
+console.log("");
 
 
 /************************************************************* */
@@ -87,13 +92,28 @@ function myLoop() {
     }
 }
 myLoop();
+console.log("");
 
 /************************************************************* */
 // Problem 7:
 // Write a JavaScript function that iterates the integers from 1 to 100. For multiples of 3 print "TEK" instead of the number and for multiples of 5, print "camp." For numbers that are multiples of both 3 and 5, print "TEKcamp."
 
-//your code...
-
+function tekLoop() {
+    var i;
+    for (i = 1; i < 101; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log("TEKcamp");
+        } else if (i % 3 == 0) {
+            console.log("TEK");
+        } else if (i % 5 == 0) {
+            console.log("camp");
+        } else {
+            console.log(i);
+        }
+    }
+}
+tekLoop();
+console.log("");
 
 /************************************************************* */
 // Problem 8:
@@ -102,9 +122,11 @@ const nums = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 // value in the nums array, and every 3rd number, i.e. 0, 3, 6,
 // and 9: the zeroth, third, sixth, and ninth values.
 
-//your code...
-
-
+var i;
+for (i = 0; i < nums.length; i=(i+3)) {
+        console.log(nums[i]);
+    }
+console.log("");
 
 // Problem 9:
 const foodArray = [ 'potatoes', 'tamales', 'lemon','strawberries','chocolate', 'pudding', {school : 'TEKcamp'} ];
