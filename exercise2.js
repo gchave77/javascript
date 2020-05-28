@@ -46,10 +46,40 @@ console.log("");
 // 125, undefined, ""
 
 var value = 20;
-value ? console.log(value + " is truthy") : console.log(" is falsy");
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
 
 var value = 0;
-value ? console.log(value + " is truthy") : console.log(" is falsy");
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = "zero" ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+const zero = 20;
+value ? console.log(zero + " is truthy") : console.log(value +" is falsy");
+
+var value = null;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = "0" ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = !"";
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = {} ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = console.log("hello TEKcamp!");
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = 125;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = undefined;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = "" ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
 console.log("");
 
 /************************************************************* */
@@ -184,41 +214,3 @@ console.log("");
 // 2. Write an outer function called stockGain that has cost basis (basis) as a parameter; declare a variable called message that holds " is how much the stock has increased".  Return an inner function with years (yrs) as a parameter and declare a variable for growth rate (r) of 5%. Console log your calculation.
 
 // Once finished, declare a variable called futureValue that holds your stockGain function and enter any amount for the cost basis and a number for the number of years.  Run the function returned by the higher order function to display the future value of the stock.  
-
-// function multiple(x) {
-//     console.log(x);
-// }
-// multiple(7);
-
-// 20, 0, "zero";
-// const zero = 20;
-// null, "0", !"", {}
-// () => {console.log("hello TEKcamp!");
-// 125, undefined, ""
-var value = 20;
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
-var value = 0;
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
-var value = "zero" ;
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
-const zero = 20;
-value ? console.log(zero + " is truthy") : console.log(value +" is falsy");
-
-var value = null;
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
-var value = "0" ;
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
-var value = !"";
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
-var value = {} ;
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
-var value = () => {console.log("hello TEKcamp!") ;
-value ? console.log(value + " is truthy") : console.log(value +" is falsy");
-
