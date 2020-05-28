@@ -111,6 +111,10 @@ if (age > 65) console.log("retired"); else {
     console.log("still working...");
 }
 
+age > 21 ? console.log("adult") : console.log("minor");
+age > 13 ? console.log("teen") : console.log("not a teenager");
+age > 65 ? console.log("retired") : console.log("still working...");
+console.log("");
 
 /************************************************************* */
 // Problem 6: Create an object literal that represents yourself.  set it to a variable that appropriately describes the object.  Include the following properties:
@@ -127,8 +131,23 @@ if (age > 65) console.log("retired"); else {
 -add another method on your object of any action you want to perform, using some property that exists on your object, making sure to utilize the 'this' keyword.
 */
 
-//your code...
-
+var gabe = {
+    name: "Gabriel Chavez",
+    age: 50,
+    gender: "male",
+    hobbies: ["code", "umpire baseball", "sleep"],
+    profession: "developer",
+    education: "B.S.",
+    learn: function() {
+        console.log(this.name);
+    },
+    likesTo: function(i) {
+        console.log(this.name + " likes to " + this.hobbies[i] + ".");
+    }
+}
+gabe.learn();
+gabe.likesTo(1);
+console.log("");
 
 /************************************************************* */
 // Problem 6: Create an object literal that represents any object in the real world that you like.  Try to come up with a realistic set of properties and methods that would accurately describe that object.  In at least one of your methods, use the this keyword to refer back to one of the properties you defined on this object literal.  
