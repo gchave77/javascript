@@ -8,19 +8,32 @@ for(let i=0; i<10; i++) {
     console.log(" the value of i in the loop is : " + i);
 }
 
-
-//your code...
-
-
-
+var i=0;
+while(i<10) {
+    console.log("The value of i in the loop is : " + i);
+    i++;
+}
+console.log("");
 
 /************************************************************* */
 // Problem 2:
 // multiply the sum of 30 added to two by 20.  Divide the product by 10 raised to the power of 2
 //use javascript to compute the value of the above statement. Each individual operation needs to be a function expression. run all the functions after defining them, and print the answer to the console.
 
-//your code...
-
+function sum() {
+    num1 = 30 + 2;
+}
+function multiply() {
+    num2 = num1 * 20;
+}
+function divide() {
+    num3 = num2 / (10 * 10);
+}
+sum();
+multiply();
+divide();
+console.log("Problem #2 answer is " + num3);
+console.log("");
 
 /************************************************************* */
 //Problem 3:
@@ -62,7 +75,26 @@ if(day === "monday") {
     console.log("It's a weekend!")
 }
 
-
+switch (day) {
+    case 'monday':
+        console.log("we got a long week ahead of us...");
+        break;
+    case 'tuesday':
+        console.log("tuesday's are still beterr than mondays, but LONG way to go still");
+        break;
+    case 'wednesday':
+        console.log("We are smack dab in the middle of the week");
+        break;
+    case 'thursday':
+        console.log("Thursday night... the mood is right");
+        break;
+    case 'friday':
+        console.log("TGIF.  Friday truly is the best day of the week!")
+        break;
+    default:
+        console.log("It's a weekend!")
+    }
+    console.log("");
 
 /************************************************************* */
 // Problem 5: Refactor the following functions to use a ternary expression:
