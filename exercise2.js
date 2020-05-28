@@ -52,6 +52,17 @@ console.log("");
 // undefined
 // ""
 
+var values = [20, 0, "zero"];
+
+const zero = 20;
+null
+"0"
+!""
+{}
+() => {console.log("hello TEKcamp!");
+125
+undefined
+""
 
 
 
@@ -152,16 +163,29 @@ console.log("");
 /************************************************************* */
 // Problem 6: Create an object literal that represents any object in the real world that you like.  Try to come up with a realistic set of properties and methods that would accurately describe that object.  In at least one of your methods, use the this keyword to refer back to one of the properties you defined on this object literal.  
 
-//your code...
-
-
+var myCar = {
+    model: "Toyota",
+    make: "Camry",
+    year: 2017,
+    color: "blue",
+    style: "XSE",
+    resale: function(i) {
+        console.log("The " + this.style + " " + this.make + " from " + this.year + " has a higher resale value than the base model.");
+    }
+}
+myCar.resale();
+console.log("");
 
 /************************************************************* */
 //Problem 7: create a function that outputs your 3 favorite data types, with a message explaining why you like that data type.
 
-//your code...
+var food = ["breakfast", "lunch", "dinner"]
+function favorite() {
+    console.log("My favorite data types are " + food[0] + ", " + food[1] + ", and " + food[2] + " because they keep me fueled all day.")
+}
 
-
+favorite();
+console.log("");
 
 /************************************************************* */
 //Bonus assignments:
@@ -175,6 +199,7 @@ console.log("");
 
 // Once finished, declare a variable called futureValue that holds your stockGain function and enter any amount for the cost basis and a number for the number of years.  Run the function returned by the higher order function to display the future value of the stock.  
 
-//your code...
-
-
+function multiple(x) {
+    console.log(x);
+}
+multiple(7);
