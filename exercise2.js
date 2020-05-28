@@ -39,32 +39,18 @@ console.log("");
 //Problem 3:
 //Determine whether the following values are "truthy" or "falsy".  console.log() the value, whether the value is 'truthy' or 'falsy', along with your reasoning why using String interpolation.
 // values : 
-// 20
-// 0
-// "zero";
+// 20, 0, "zero";
 // const zero = 20;
-// null
-// "0"
-// !""
-// {}
+// null, "0", !"", {}
 // () => {console.log("hello TEKcamp!");
-// 125
-// undefined
-// ""
+// 125, undefined, ""
 
-var values = [20, 0, "zero"];
+var value = 20;
+value ? console.log(value + " is truthy") : console.log(" is falsy");
 
-const zero = 20;
-null
-"0"
-!""
-{}
-() => {console.log("hello TEKcamp!");
-125
-undefined
-""
-
-
+var value = 0;
+value ? console.log(value + " is truthy") : console.log(" is falsy");
+console.log("");
 
 /************************************************************* */
 // Problem 4:
@@ -199,7 +185,40 @@ console.log("");
 
 // Once finished, declare a variable called futureValue that holds your stockGain function and enter any amount for the cost basis and a number for the number of years.  Run the function returned by the higher order function to display the future value of the stock.  
 
-function multiple(x) {
-    console.log(x);
-}
-multiple(7);
+// function multiple(x) {
+//     console.log(x);
+// }
+// multiple(7);
+
+// 20, 0, "zero";
+// const zero = 20;
+// null, "0", !"", {}
+// () => {console.log("hello TEKcamp!");
+// 125, undefined, ""
+var value = 20;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = 0;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = "zero" ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+const zero = 20;
+value ? console.log(zero + " is truthy") : console.log(value +" is falsy");
+
+var value = null;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = "0" ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = !"";
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = {} ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
+var value = () => {console.log("hello TEKcamp!") ;
+value ? console.log(value + " is truthy") : console.log(value +" is falsy");
+
