@@ -5,13 +5,10 @@
 // Problem 1:
 // Write a JavaScript function that determines whether a string is empty. If the string is empty, the output should be true, otherwise it should return false. 
 
-
-
-//your code...
-
-
-
-
+function empty() {
+    console.log(_.isEmpty["HTML", "", 77]);
+}
+empty();
 
 /************************************************************* */
 
