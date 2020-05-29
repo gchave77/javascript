@@ -104,16 +104,31 @@ console.log("");
 const numbers = [2,23,1,2,1,1,1,2,2.5,20,200,2000,,{k:1},20000,19999,1878,140,23,4,"sk",true,true,"true-dat","nice","one","two","three","3","tea",[]];
 
 function maxNumber(numbers) {
-    //your code...
+    //your code... with help from Amir - Gracias!
+    let truths = numbers.filter(el => el);
+    let primitives = truths.filter(t => typeof t != "object");
+    let noBools = primitives.filter(p => typeof p != "boolean");
+    let numStr = ["zero", "one", "two", "three"];
+    let numWstr = noBools.map(nb => numStr.includes(nb) ? numStr.indexOf (nb) : nb);
+    nums = numWstr.filter(nw => typeof nw != "string");
+    console.log(nums);
+    console.log(Math.max(...nums));
 }
+
+maxNumber(numbers);
+console.log("");
 
 // 7.b -Write a function that sorts the given numbers array.  Allow the function to sort the array in descending order
 
-function sortNums(numbers,desc=false) {
+// NOTE: I had to declare nums as a global variable in the maxNumber function above to use it here. 
+function sortNums(nums,desc=false) {
     //your code...
+    nums.sort(function(a, b){return b-a});
 };
 
-
+sortNums(nums);
+console.log(nums);
+console.log("");
 
 
 /************************************************************* */
