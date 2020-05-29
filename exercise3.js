@@ -122,6 +122,7 @@ function sortNums(numbers,desc=false) {
 
 const mapObj = new Map();
 mapObj.set({company : "TEKsystems"},"object");
+// line 106 is the line above this one => mapObj.set({company : "TEKsystems"},"object");
 
 
 console.log(mapObj.has({company : "TEKsystems"}));  
@@ -138,6 +139,8 @@ console.log(mapObj.has({company : "TEKsystems"}));
 let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
 //reverse the array, without modifying the ones array.
 
+let onesRev = ones.reverse();
+console.log(onesRev);
 
 /************************************************************* */
 //Problem 12:
