@@ -5,48 +5,58 @@
 // Problem 1:
 // Write a JavaScript function that determines whether a string is empty. If the string is empty, the output should be true, otherwise it should return false. 
 
-function empty() {
-    console.log(_.isEmpty["HTML", "", 77]);
+function isEmpty(str) {
+    console.log(str);
+    if (str) {
+        console.log(true);
+    } else {
+        console.log(false); 
+    }
 }
-empty();
-
+isEmpty(0);
+console.log("");
+  
 /************************************************************* */
 
 // Problem 2:
 // Declare a variable that holds a string (e.g., ‘Learning JavaScript is fun!’). Replace a word so that the output uses the new word instead (e.g., ‘Learning JavaScript is cool!). 
 
-
-
-//your code...
-
-
-
+let holds = "Learning JavaScript is fun!";
+console.log(holds);
+let repl = holds.replace("fun", "cool");
+console.log(repl);
+console.log("");
 
 /************************************************************* */
 // Problem 3:
 // Write a function that declares an array of numbers from one to five and returns another array with the squared value of each number from the first array. Use an arrow function and one of the built-in array methods. 
-
-
-
-//your code...
-
-
-
-
-
+  
+function declare() {
+    let arr1 = [1, 2, 3, 4, 5];
+    let squareArr1 = [];
+    arr1.forEach(n => squareArr1.push (n**2));
+    console.log(squareArr1);
+}
+declare();
+console.log("");
 
 /************************************************************* */
 // Problem 4:
 // Now declare another array of numbers that has the following numbers: 1, 3, 5, 7, 9, 1, 3, 5. Write a JavaScript program that returns an array of the numbers that are greater than 3. Use an arrow function and one of the built-in array methods.
 
-
-
-//your code...
-
-
-
-
-
+function declare2() {
+    let arr2 = [1, 3, 5, 7, 9, 1, 3, 5];
+    console.log(arr2)
+    let moreArr2 = [];
+    arr2.forEach(n => {
+        if (n > 3) {
+            moreArr2.push(n);
+        }
+    });
+    console.log(moreArr2);
+}
+declare2();
+console.log("");
 
 /************************************************************* */
 // Problem 5:
