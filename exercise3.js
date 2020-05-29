@@ -79,14 +79,42 @@ console.log("");
 
 // Write a function that takes in a DNA string as a parameter and returns an array with the complementary strand. For example, a string of "GCTA" would return an array of ["C", "G", "A", "T"].  
 
+function dnaStr(str6) {
+    dnaArr = str6.split("");
+    for (i = 0; i < dnaArr.length; i++) {
+        if (dnaArr[i] === "G") {
+            dnaArr.push("C");
+        } else if (dnaArr[i] === "T"){
+            dnaArr.push("A");
+        } else if (dnaArr[i] === "C"){
+            dnaArr.push("G");
+        } else if (dnaArr[i] === "A"){
+            dnaArr.push("T");
+        };
+    };
 
+    console.log(dnaArr);
+}
+dnaStr("GCTA");
+console.log("");
 
-//your code...
-
-
-
-
-
+function dnaStr2(str6) {
+    dnaArr = str6.split("");
+    for (i = 0; i < dnaArr.length; i++) {
+        if (dnaArr[i] === "G") {
+            dnaArr.splice(i, 1, "C");
+        } else if (dnaArr[i] === "T"){
+            dnaArr.splice(i, 1, "A");
+        } else if (dnaArr[i] === "C"){
+            dnaArr.splice(i, 1, "G");
+        } else if (dnaArr[i] === "A"){
+            dnaArr.splice(i, 1, "T");
+        };
+    };
+    console.log(dnaArr);
+}
+dnaStr2("GCTA");
+console.log("");
 
 /************************************************************* */
 // Problem 7:
