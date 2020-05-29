@@ -141,6 +141,7 @@ let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
 
 let onesRev = ones.reverse();
 console.log(onesRev);
+console.log("");
 
 /************************************************************* */
 //Problem 12:
@@ -148,8 +149,13 @@ console.log(onesRev);
 
 function performer(cb) {
     //code goes here
-}
-
+    cb();
+    function cb() {
+        console.log("Return the callback function.");
+    }
+}  
+performer();
+console.log("");
 
 /************************************************************* */
 //Bonus assignment:
