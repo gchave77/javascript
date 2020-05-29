@@ -62,14 +62,22 @@ console.log("");
 // Problem 5:
 // Now declare another array of numbers that has any 5 numbers. Write a JavaScript program that returns the sum of those numbers. Use an arrow function and one of the built-in array methods. 
 
+const randomArray = [9, 0, 2, 10, 378];
+let randomArraySum = 0;
 
+randomArray.forEach(n => randomArraySum += n); 
+// reach into randomArray and add each item to randomArraySum
 
-//your code...
-
-
-
-
-
+function declare3() {
+    let arr3 = [7, 9, 1, 3, 5];
+    console.log(arr3)
+    var sum3 = arr3.reduce(function(a, b) {
+        return a + b;
+    }, 0);
+    console.log(sum3);
+}
+declare3();
+console.log("");
 
 /************************************************************* */
 // Problem 6:
