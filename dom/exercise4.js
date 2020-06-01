@@ -17,7 +17,12 @@ let _ul = document.querySelector("ul");
 let _input = document.querySelector("input");
 let _button = document.querySelector("button");
 function store(target) {
-    let shopItem = _input.value;
+    let myList = _input.value;
     _input.value = "";
+    let _li = document.createElement("li")
+    let _span = document.createElement("span")
+    let _button = document.createElement("button")
+    _li.appendChild(_span)
+    _li.appendChild(_button)
 
 }
