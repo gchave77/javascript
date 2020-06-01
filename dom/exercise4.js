@@ -13,10 +13,11 @@ Exercise 1:
 10. Attach an event handler to the delete button, so that when clicked it will delete the entire list item it is inside.
 11. Finally, use the focus() method to focus the input element ready for entering the next shopping list item.
 */
+
 let _ul = document.querySelector("ul");
 let _input = document.querySelector("input");
 let _button = document.querySelector("button");
-function store(clicked) {
+function store() {
     let myList = _input.value;
     _input.value = "";
     let _li = document.createElement("li")
@@ -30,5 +31,6 @@ function store(clicked) {
     _button.addEventListener("click", function() {
         _li.remove();
     } );
+    _input.focus();
 }
 _button.addEventListener("click", store);
