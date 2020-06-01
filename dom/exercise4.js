@@ -24,5 +24,7 @@ function store(target) {
     let _button = document.createElement("button")
     _li.appendChild(_span)
     _li.appendChild(_button)
+    _span.textContent = myList;
+    _button.textContent = "Delete";
 
 }
