@@ -5,64 +5,73 @@
 // Problem 1:
 // Write a JavaScript function that determines whether a string is empty. If the string is empty, the output should be true, otherwise it should return false. 
 
-
-
-//your code...
-
-
-
-
-
+function isEmpty(str) {
+    console.log(str);
+    if (str) {
+        console.log(true);
+    } else {
+        console.log(false); 
+    }
+}
+isEmpty(0);
+console.log("");
+  
 /************************************************************* */
 
 // Problem 2:
 // Declare a variable that holds a string (e.g., ‘Learning JavaScript is fun!’). Replace a word so that the output uses the new word instead (e.g., ‘Learning JavaScript is cool!). 
 
-
-
-//your code...
-
-
-
+let holds = "Learning JavaScript is fun!";
+console.log(holds);
+let repl = holds.replace("fun", "cool");
+console.log(repl);
+console.log("");
 
 /************************************************************* */
 // Problem 3:
 // Write a function that declares an array of numbers from one to five and returns another array with the squared value of each number from the first array. Use an arrow function and one of the built-in array methods. 
-
-
-
-//your code...
-
-
-
-
-
+  
+function declare() {
+    let arr1 = [1, 2, 3, 4, 5];
+    let squareArr1 = [];
+    arr1.forEach(n => squareArr1.push (n**2));
+    console.log(squareArr1);
+}
+declare();
+console.log("");
 
 /************************************************************* */
 // Problem 4:
 // Now declare another array of numbers that has the following numbers: 1, 3, 5, 7, 9, 1, 3, 5. Write a JavaScript program that returns an array of the numbers that are greater than 3. Use an arrow function and one of the built-in array methods.
 
-
-
-//your code...
-
-
-
-
-
+function declare2() {
+    let arr2 = [1, 3, 5, 7, 9, 1, 3, 5];
+    console.log(arr2)
+    let moreArr2 = [];
+    arr2.forEach(n => {
+        if (n > 3) {
+            moreArr2.push(n);
+        }
+    });
+    console.log(moreArr2);
+}
+declare2();
+console.log("");
 
 /************************************************************* */
 // Problem 5:
 // Now declare another array of numbers that has any 5 numbers. Write a JavaScript program that returns the sum of those numbers. Use an arrow function and one of the built-in array methods. 
 
-
-
-//your code...
-
-
-
-
-
+function declare3() {
+    let arr3 = [7, 9, 1, 3, 5];
+    console.log(arr3)
+    var sum3 = arr3.reduce(function(a, b) {
+        return a + b;
+    }, 0);
+    console.log(sum3);
+}
+declare3();
+console.log("");
 
 /************************************************************* */
 // Problem 6:
@@ -70,14 +79,23 @@
 
 // Write a function that takes in a DNA string as a parameter and returns an array with the complementary strand. For example, a string of "GCTA" would return an array of ["C", "G", "A", "T"].  
 
-
-
-//your code...
-
-
-
-
-
+function dnaStr2(str6) {
+    dnaArr = str6.split("");
+    for (i = 0; i < dnaArr.length; i++) {
+        if (dnaArr[i] === "G") {
+            dnaArr.splice(i, 1, "C");
+        } else if (dnaArr[i] === "T"){
+            dnaArr.splice(i, 1, "A");
+        } else if (dnaArr[i] === "C"){
+            dnaArr.splice(i, 1, "G");
+        } else if (dnaArr[i] === "A"){
+            dnaArr.splice(i, 1, "T");
+        };
+    };
+    console.log(dnaArr);
+}
+dnaStr2("GCTA");
+console.log("");
 
 /************************************************************* */
 // Problem 7:
@@ -86,16 +104,31 @@
 const numbers = [2,23,1,2,1,1,1,2,2.5,20,200,2000,,{k:1},20000,19999,1878,140,23,4,"sk",true,true,"true-dat","nice","one","two","three","3","tea",[]];
 
 function maxNumber(numbers) {
-    //your code...
+    //your code... with help from Amir - Gracias!
+    let truths = numbers.filter(el => el);
+    let primitives = truths.filter(t => typeof t != "object");
+    let noBools = primitives.filter(p => typeof p != "boolean");
+    let numStr = ["zero", "one", "two", "three"];
+    let numWstr = noBools.map(nb => numStr.includes(nb) ? numStr.indexOf (nb) : nb);
+    nums = numWstr.filter(nw => typeof nw != "string");
+    console.log(nums);
+    console.log(Math.max(...nums));
 }
+
+maxNumber(numbers);
+console.log("");
 
 // 7.b -Write a function that sorts the given numbers array.  Allow the function to sort the array in descending order
 
-function sortNums(numbers,desc=false) {
+// NOTE: I had to declare nums as a global variable in the maxNumber function above to use it here. 
+function sortNums(nums,desc=false) {
     //your code...
+    nums.sort(function(a, b){return b-a});
 };
 
-
+sortNums(nums);
+console.log(nums);
+console.log("");
 
 
 /************************************************************* */
@@ -104,6 +137,7 @@ function sortNums(numbers,desc=false) {
 
 const mapObj = new Map();
 mapObj.set({company : "TEKsystems"},"object");
+// line 106 is the line above this one => mapObj.set({company : "TEKsystems"},"object");
 
 
 console.log(mapObj.has({company : "TEKsystems"}));  
@@ -120,6 +154,9 @@ console.log(mapObj.has({company : "TEKsystems"}));
 let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
 //reverse the array, without modifying the ones array.
 
+let onesRev = ones.reverse();
+console.log(onesRev);
+console.log("");
 
 /************************************************************* */
 //Problem 12:
@@ -127,8 +164,13 @@ let ones = [1,11,111,1111,11111,111111,1111111,11111111,111111111,1111111111];
 
 function performer(cb) {
     //code goes here
-}
-
+    cb();
+    function cb() {
+        console.log("Return the callback function.");
+    }
+}  
+performer();
+console.log("");
 
 /************************************************************* */
 //Bonus assignment:
