@@ -16,7 +16,7 @@ Exercise 1:
 let _ul = document.querySelector("ul");
 let _input = document.querySelector("input");
 let _button = document.querySelector("button");
-function store(target) {
+function store(clicked) {
     let myList = _input.value;
     _input.value = "";
     let _li = document.createElement("li")
@@ -26,5 +26,9 @@ function store(target) {
     _li.appendChild(_button)
     _span.textContent = myList;
     _button.textContent = "Delete";
-
+    _ul.appendChild(_li)
+    _button.addEventListener("click", function() {
+        _li.remove();
+    } );
 }
+_button.addEventListener("click", store);
